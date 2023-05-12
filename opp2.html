@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class student{
+      constructor(name,age){
+
+        this.student_name = name;
+        this.studentage = age;
+        console.log("constrcture function");
+      }
+      hello(){
+        console.log(`your name is ${this.student_name} and your age is ${this.studentage}.`);
+
+    }
+    static sourav(){
+        console.log("static function");
+    }
+}
+
+    let a = new student("yahoo baba",25);
+    let b = new student("ram kumar", 22);
+   // a.name = "yahoo baba";
+    a.hello();
+    b.hello();
+    student.sourav();
+
+</script>
+</html>

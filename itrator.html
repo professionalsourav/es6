@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+function numberIterator(arr){
+   var nextnum = 0 ;
+   return {
+    next(){
+      if(nextnum < arr.length){
+          return{
+        value : arr[nextnum++],
+        done : false
+      }
+      }else{
+          return{
+       
+        done : true
+      }
+      }
+    
+    }
+   }
+}
+
+
+
+
+
+    let number = [100,200,300,400,500];
+      // let str = "yahoo baba"; 
+  let num =  numberIterator(number);
+  console.log(num.next());
+    (num.next());
+    console.log(num.next());
+     console.log(num.next());
+      console.log(num.next());
+       console.log(num.next());
+  
+</script>
+</html>

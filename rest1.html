@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ function sum(name,course, ...sundu){
+//     sum = 0;
+// for(let i in arguments){
+// sum = sum + arguments[i];
+// }
+//  }
+// //  sum(20,30);
+// //  sum(20,30,40);
+// //  sum(35,43,12,45);
+//  console.log(sum(20,30,40));
+
+console.log(arguments);
+
+document.write(`hello ${name} ${course} :  `);
+
+let sum =0;
+for(let i in sundu){
+    sum = sum + sundu[i];
+}
+document.write(sum+"<br>");
+console.log(sum);
+ }
+
+
+sum("sourav","btech",20,30,40);
+sum("ram kumar","ba",45,65,78,123);
+//sum(20,30);
+
+
+</script>
+</html>
